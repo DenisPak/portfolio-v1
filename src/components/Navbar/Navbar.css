@@ -1,0 +1,82 @@
+#nav {
+  background-color: var(--bg-color);
+  position: fixed;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  -webkit-box-shadow: 0px 2px 16px 9px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 0px 2px 16px 9px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 2px 16px 9px rgba(0, 0, 0, 0.27);
+  font-size: 1rem;
+  z-index: 10;
+}
+#nav #logo {
+  padding: 20px;
+}
+#nav ul {
+  list-style: none;
+}
+
+#nav .nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  margin-right: 2rem;
+  margin-left: auto;
+}
+
+#nav .nav-menu .nav-link {
+  padding: 20px;
+}
+#nav .nav-menu .nav-link a:hover {
+  color: var(--primary-color);
+  transition: all 0.2s ease-out;
+}
+#nav a {
+  color: var(--text-color-lighter);
+}
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  #nav {
+    display: relative;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    right: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 5;
+    -webkit-box-shadow: 0px 2px 16px 9px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 2px 16px 9px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 2px 16px 9px rgba(0, 0, 0, 0.27);
+    font-size: 1.5rem;
+  }
+  .nav-menu.active {
+    right: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 10;
+  }
+
+  .hamburger {
+    display: inline;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 15;
+  }
+}

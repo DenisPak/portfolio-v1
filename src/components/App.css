@@ -1,0 +1,112 @@
+:root {
+  --bg-color: #0a192f;
+  --text-color: rgb(136, 146, 176);
+  --text-color-lighter: rgb(204, 214, 246);
+  --primary-color: rgb(100, 255, 218);
+}
+
+.App {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color-lighter);
+  margin: 0;
+}
+
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 32px;
+  margin: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+p {
+  color: var(--text-color);
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+.sectionHeader {
+  display: flex;
+  margin-bottom: 30px;
+}
+.sectionHeader hr {
+  align-self: center;
+  border-color: var(--text-color);
+  width: 40%;
+}
+
+.btn {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color) !important;
+  width: fit-content;
+  transition: background-color 0.8;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.btn:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+.btn-lg {
+  padding: 15px 28px;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.text-color {
+  color: var(--text-color);
+}
+@media screen and (max-width: 1280px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 32px;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .sectionHeader {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .sectionHeader h2 {
+    text-align: left;
+  }
+  .sectionHeader hr:first-child {
+    display: none;
+  }
+}

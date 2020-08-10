@@ -1,0 +1,41 @@
+.side-links {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.left {
+  left: 40px;
+}
+
+.right {
+  right: 40px;
+}
+
+.right a {
+  writing-mode: vertical-rl;
+}
+
+.vline {
+  border-left: 1px solid var(--text-color-lighter);
+  height: 90px;
+  margin-top: 30px;
+}
+
+.right .vline {
+  height: 30px;
+}
+
+a {
+  padding: 10px;
+  color: var(--text-color-lighter);
+}
+
+@media screen and (max-width: 960px) {
+  .side-links {
+    display: none;
+  }
+}

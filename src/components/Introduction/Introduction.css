@@ -1,0 +1,31 @@
+#introduction {
+  display: flex;
+  flex-direction: column;
+  height: 97vh;
+  justify-content: center;
+}
+
+.cta {
+  max-width: 500px;
+  margin: 25px 0 50px 0;
+}
+
+#invite-link {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #introduction a,
+  span {
+    display: block;
+    text-align: center;
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    width: auto;
+  }
+  #invite-ling {
+    display: block;
+  }
+}
