@@ -3,6 +3,8 @@ import React from "react";
 import "./Projects.css";
 import notes from "../../images/notes.png";
 import gallery from "../../images/gallery.png";
+import poster from "../../images/poster.png";
+
 const Projects = () => {
   return (
     <div id="projects">
@@ -13,12 +15,10 @@ const Projects = () => {
       </div>
       <div className="project">
         <div className="desc">
-          <h3>Poster [WIP]</h3>
+          <h3>Poster </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam
-            quae rem nemo non odio perferendis adipisci aspernatur impedit,
-            velit harum soluta sint, aut quidem illum tempore placeat, molestias
-            asperiores?
+            A CRUD application I've built in order to get a more in-depth look
+            of how Redux interacts with Firebase.
           </p>
           <code>
             <ul>
@@ -28,19 +28,29 @@ const Projects = () => {
             </ul>
           </code>
           <div>
-            <a href="#">
+            <a
+              href="https://github.com/DenisPak/poster"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-github"></i>
             </a>
-            <a href="#">
+            <a
+              href="https://poster-b9efa.web.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fas fa-external-link-alt"></i>
             </a>
           </div>
         </div>
 
-        <div className="image">
-          <a href="#">
-            <img src="" alt="" />
-          </a>
+        <div className="image" style={{ backgroundImage: `url(${poster}})` }}>
+          <a
+            href="https://poster-b9efa.web.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
         </div>
       </div>
       <div className="project">
@@ -59,10 +69,18 @@ const Projects = () => {
             </ul>
           </code>
           <div>
-            <a href="#">
+            <a
+              href="https://github.com/DenisPak/notes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-github"></i>
             </a>
-            <a href="#">
+            <a
+              href="https://denispak.github.io/notes/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fas fa-external-link-alt"></i>
             </a>
           </div>
@@ -72,16 +90,20 @@ const Projects = () => {
           className="image imageRight"
           style={{ backgroundImage: `url(${notes})` }}
         >
-          <a href="#"></a>
+          <a
+            href="https://denispak.github.io/notes/"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
         </div>
       </div>
       <div className="project">
         <div className="desc">
-          <h3>Image Gallery</h3>
+          <h3>Image Search</h3>
           <p>
-            An Image Gallery that lazyly loads them from Unsplash API based on
-            the user query. Each image is given a custom height for a nicer grid
-            look.
+            An Image Search application that lazyly loads them from Unsplash API
+            based on the user query. Each image is given a custom height for a
+            nicer grid look.
           </p>
           <code>
             <ul>
@@ -90,17 +112,29 @@ const Projects = () => {
             </ul>
           </code>
           <div>
-            <a href="#">
+            <a
+              href="https://github.com/DenisPak/image-search"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-github"></i>
             </a>
-            <a href="#">
-              <i className="fas fa-external-link-alt"></i>
+            <a href="https://denispak.github.io/image-search/">
+              <i
+                className="fas fa-external-link-alt"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></i>
             </a>
           </div>
         </div>
 
         <div className="image" style={{ backgroundImage: `url(${gallery})` }}>
-          <a href="#"></a>
+          <a
+            href="https://denispak.github.io/image-search/"
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
         </div>
       </div>
     </div>

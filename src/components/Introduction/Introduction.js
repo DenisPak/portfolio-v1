@@ -19,7 +19,7 @@ const Introduction = () => {
         </a>
         <code id="invite-link">
           <span>or</span>
-          <a href="#">invite me for an interview</a>
+          <a href="mailto:rikaho@mail.ru">invite me for an interview</a>
         </code>
       </div>
     </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <header id="nav">
-      <div id="logo"> Logo</div>
+      {/* <div id="logo"> Logo</div> */}
       <div
         className={`hamburger hamburger--spin ${open ? "is-active" : ""}`}
         onClick={() => setOpen(!open)}
@@ -20,7 +20,7 @@ const Navbar = () => {
       <ul className={open ? "nav-menu active" : "nav-menu"}>
         <li className="nav-link">
           <code>
-            <a href="#">Home</a>
+            <a href="#introduction">Home</a>
           </code>
         </li>
         <li className="nav-link">
@@ -36,11 +36,14 @@ const Navbar = () => {
 
         <li className="nav-link">
           <code>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </code>
         </li>
         <li className="nav-link">
-          <a href="#" className="btn">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1-yHPGdVbJJl8iucBoifQ-tvfsNsF5qgf"
+            className="btn"
+          >
             Resume
           </a>
         </li>

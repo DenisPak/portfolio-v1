@@ -9,16 +9,30 @@ const SideLinks = ({ orientation }) => {
       <div className="vline"></div>
       {orientation === "left" ? (
         <>
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/denis-pak-119ab6159/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-linkedin-in"></i>
           </a>
-          <a href="#">
+          <a
+            href="https://github.com/DenisPak"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-github"></i>
           </a>
         </>
       ) : (
         <code>
-          <a href="mailto:rikaho@mail.ru">rikaho@mail.ru</a>
+          <a
+            href="mailto:rikaho@mail.ru"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            rikaho@mail.ru
+          </a>
         </code>
       )}
     </div>

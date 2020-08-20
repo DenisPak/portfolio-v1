@@ -42,7 +42,8 @@
 
 .project .desc a {
   padding: 0;
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .project .desc p {
   background-color: #172a45;
