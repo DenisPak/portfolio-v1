@@ -3,7 +3,7 @@ import React from "react";
 import "./Projects.css";
 import notes from "../../images/notes.png";
 import gallery from "../../images/gallery.png";
-import poster from "../../images/poster.png";
+import poster from "../../images/poster.jpg";
 
 const Projects = () => {
   return (
@@ -45,7 +45,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="image" style={{ backgroundImage: `url(${poster}})` }}>
+        <div className="image" style={{ backgroundImage: `url(${poster})` }}>
           <a
             href="https://poster-b9efa.web.app/"
             target="_blank"
@@ -57,7 +57,7 @@ const Projects = () => {
         <div className="desc descLeft">
           <h3>Notes</h3>
           <p>
-            A simple we app where you can keep all your notes. Used Firebase to
+            A simple web app where you can keep all your notes. Used Firebase to
             store all the notes, custom React Hooks to interact with it, and
             Material UI for styling
           </p>

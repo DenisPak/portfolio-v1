@@ -47,6 +47,11 @@
     box-shadow: none;
   }
 
+  #nav .nav-menu {
+    margin-right: 0;
+    padding-left: 0;
+  }
+
   .nav-menu {
     display: flex;
     flex-direction: column;
