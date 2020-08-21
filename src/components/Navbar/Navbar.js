@@ -9,6 +9,7 @@ const Navbar = () => {
   return (
     <header id="nav">
       {/* <div id="logo"> Logo</div> */}
+      <div id="mobile-bar"></div>
       <div
         className={`hamburger hamburger--spin ${open ? "is-active" : ""}`}
         onClick={() => setOpen(!open)}

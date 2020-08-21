@@ -10,6 +10,11 @@
   font-size: 1rem;
   z-index: 10;
 }
+
+#nav #mobile-bar {
+  display: none;
+}
+
 #nav #logo {
   padding: 20px;
 }
@@ -47,6 +52,19 @@
     box-shadow: none;
   }
 
+  #nav #mobile-bar {
+    background-color: var(--bg-color);
+    position: fixed;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    z-index: 5;
+    -webkit-box-shadow: 0px 2px 16px 9px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 2px 16px 9px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 2px 16px 9px rgba(0, 0, 0, 0.27);
+    height: 70px;
+  }
+
   #nav .nav-menu {
     margin-right: 0;
     padding-left: 0;
@@ -80,8 +98,8 @@
   .hamburger {
     display: inline;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
     z-index: 15;
   }
 }
